@@ -1,0 +1,83 @@
+.modal-body{
+    background-color: rgb(255, 255, 197);
+}
+
+.navbar-brand{
+    border-radius: 6px;
+}
+body{
+    background: rgb(218, 201, 201);
+}
+
+
+nav img{
+    width: 80px;
+    background-color: black;
+}
+#Principal img{
+    max-height: 70vh;
+    object-fit: cover;
+
+}
+#Principal{
+    position: relative;
+}
+#Principal #contenido{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+#Principal .container, #Principal .row{
+    width: 100%;
+    height: 100%;
+}
+#footer{
+    background-color: gray;
+    margin-top: 35px;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+.card{
+
+
+
+    width: 250px;
+    height: 200px;
+    
+}
+.card-body{
+    box-shadow: 5px 5px 5px gray;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+.card-body:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.uno{
+    margin: 10px;
+}
+.card-text{
+    font-size: 15px;
+
+}
+.p{
+color:  rgb(41, 40, 40);
+}
+.c{
+color:  rgb(41, 40, 40);
+}
+.footer{
+    height: auto;
+    width: auto;
+    border:3px solid rgb(129, 126, 126) ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

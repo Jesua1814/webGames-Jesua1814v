@@ -1,0 +1,543 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .hero-section {
+          background: url('https://inforprintsantander.es/wp-content/uploads/2016/05/Fondo-oscuro-web-inforprint-santander-1024x576.png') no-repeat center center;
+          background-size: cover;
+          color: white;
+          padding: 100px 0;
+          text-align: center;
+      }
+      .hero-section h1 {
+          font-size: 3rem;
+      }
+      .hero-section p {
+          font-size: 1.25rem;
+      }
+      .footer {
+          background-color: #f8f9fa;
+          padding: 20px 0;
+          text-align: center;
+      }
+  </style>
+</head>
+
+  <body style="background-color: rgb(41, 40, 40);">
+    
+<!--header-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Games</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Intae/index.html">Peliculas</a>
+        </li>
+    </div>
+    </div>
+  </div>
+</nav>
+    
+<!--fin header-->
+<main>
+  <!-- Hero Section -->
+  <section class="hero-section">
+      <div class="container">
+          <h1>Bienvenido a GAMES, tu lugar para los mejores videojuegos. ¡Explora, encuentra y disfruta!</h1>
+          <p>Descubre nuestros servicios y aprende más sobre lo que hacemos.</p>
+         
+      </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container py-5">
+      <div class="row">
+          <div class="col-md-6 text-light">
+              <h2>Sobre Nosotros</h2>
+              <p>En Games Web, nuestra pasión por los videojuegos nos impulsa a ofrecer una experiencia de compra inigualable. Desde el principio, hemos traído los juegos más recientes y emocionantes, enfocándonos en calidad y servicio. Nuestro equipo de expertos está aquí para ayudarte a encontrar el juego perfecto, garantizando una compra rápida, segura y satisfactoria.
+
+              </p>
+          </div>
+          <div class="col-md-6 text-light">
+              <h2>Nuestros Servicios</h2>
+              <p>En Games Web, te ofrecemos todo lo necesario para mejorar tu experiencia de juego: desde los últimos títulos y ediciones especiales hasta soporte técnico y recomendaciones personalizadas. También contamos con servicios de pre-pedido, actualizaciones de software y accesorios esenciales para mantener tu configuración de juego al día. Nuestro compromiso es asegurarnos de que disfrutes al máximo de tus juegos favoritos.</p>
+          </div>
+      </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p><h1>Juegos Agregados Recientemente</h1></p>
+      <p> <h2>Descubre los juegos más recientes que hemos añadido a nuestra colección.</h2> </p>
+  </div>
+</footer><br>
+<!-- cards -->
+
+
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      <div class="row justify-content-center">
+          <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+              <div class="card text-center">
+                <img src="imagenes/GTAV.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <span class="badge text-bg-danger">Accion, Aventura</span>
+                      <h5 class="card-title">GTA V</h5>
+                      <p class="card-text">
+                        GTA V es un videojuego de mundo abierto donde los jugadores controlan a tres criminales en la ciudad ficticia de Los Santos.</p>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                        Comprar - 27.45$
+                    </button>
+                  </div>
+              </div>
+          </div>
+           <!-- Modal -->
+  <div class="modal fade" id="formularioModal" tabindex="-1" aria-labelledby="formularioModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="formularioModalLabel">Proceso de la compra</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <form id="compraForm">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="direccion" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="direccion" >
+                    </div>
+                    <div class="mb-3">
+                      <label for="numero" class="form-label">Numero Tarjeta</label>
+                      <input type="text" class="form-control" id="Numero" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="Cvc" class="form-label">CVC</label>
+                    <input type="text" class="form-control" id="cvc" required>
+                </div>
+                <div class="mb-3">
+                  <label for="codigo" class="form-label">Codigo</label>
+                  <input type="text" class="form-control" id="codigo" required>
+              </div>
+                    <!-- Más campos de formulario según sea necesario -->
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Mensaje de Confirmación -->
+<div class="modal fade" id="confirmacionModal" tabindex="-1" aria-labelledby="confirmacionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmacionModalLabel">Confirmación de Pago</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p>Pago completado</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+      <div class="card text-center">
+          <img src="imagenes/street.jpeg" class="card-img-top" alt="Fall Guys">
+          <div class="card-body">
+            <span class="badge text-bg-danger">Lucha</span>
+              <h5 class="card-title">Street Fighter</h5>
+              <p class="card-text">
+                Street Fighter es una serie de videojuegos de lucha donde los jugadores enfrentan 
+                a personajes con habilidades únicas.</p>
+              <!-- Botón para abrir el modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                  Comprar - 17.99$
+              </button>
+          </div>
+      </div>
+  </div>
+
+
+      <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+        <div class="card text-center">
+            <img src="imagenes/mk11.jpeg" class="card-img-top" alt="...">
+            <div class="card-body"> 
+              <span class="badge text-bg-danger">Accion</span>
+                <h5 class="card-title">MK 11</h5>
+                <p class="card-text">
+                  MK 11 es un videojuego de lucha que presenta combates sangrientos y una amplia
+                   gama de personajes con habilidades únicas</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                  Comprar - 47.88$
+              </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+      <div class="card text-center">
+          <img src="imagenes/apex.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge text-bg-danger">Battle royale</span>
+              <h5 class="card-title">Apex Legens</h5>
+              <p class="card-text">Apex Legends es un videojuego de batalla real en el que equipos
+                 de jugadores compiten en una isla para ser los últimos sobrevivientes</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                Comprar - Gratis
+            </button>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+    <div class="card text-center">
+        <img src="imagenes/Call Of Duty.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <span class="badge text-bg-danger">Disparos, Primera Persona</span>
+            <h5 class="card-title">Call of duty</h5>
+            <p class="card-text">
+              Call of Duty es una serie de videojuegos de disparos en primera persona centrada en 
+              combates militares modernos y históricos.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+              Comprar - 68.99$
+          </button>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+  <div class="card text-center">
+      <img src="imagenes/Fall Guys.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="badge text-bg-danger">Battle Royale, Plataformas</span>
+          <h5 class="card-title">Fall Guys</h5>
+          <p class="card-text">Fall Guys es un videojuego de batalla real en el que los jugadores
+             compiten en desafíos y mini-juegos para ser el último .</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+            Comprar - 19.99$
+        </button>
+      </div>
+  </div>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+  <div class="card text-center">
+      <img src="imagenes/Fornite.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="badge text-bg-danger">Battle Royale</span>
+          <h5 class="card-title">Fornite</h5>
+          <p class="card-text">
+            Fortnite es un videojuego de batalla real donde los jugadores construyen estructuras y compiten para ser el último en pie.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+            Comprar - Gratis
+        </button>
+      </div>
+  </div>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+  <div class="card text-center">
+      <img src="imagenes/Forza.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="badge text-bg-danger">Autos, Carreras</span>
+          <h5 class="card-title">Forza Horizon</h5>
+          <p class="card-text">Forza Horizon es un emocionante juego de carreras en mundo abierto donde exploras y compites en una vibrante festival de coches.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+            Comprar - 57.77$
+        </button>
+      </div>
+  </div>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+  <div class="card text-center">
+      <img src="imagenes/Ghost.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="badge text-bg-danger">Accion,Aventura</span>
+          <h5 class="card-title">Ghost </h5>
+          <p class="card-text">Ghost of Tsushima es un juego de acción en un mundo abierto que te lleva al Japón feudal, donde debes proteger tu hogar como un samurái.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+            Comprar - 49.99$
+        </button>
+      </div>
+  </div>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+  <div class="card text-center">
+      <img src="imagenes/Gran Turismo.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="badge text-bg-danger">Carreras, Mundo Abierto</span>
+          <h5 class="card-title">Gran Turismo 7</h5>
+          <p class="card-text">Gran Turismo es un simulador de carreras que ofrece una experiencia de conducción realista con una amplia gama de coches y pistas. Precio.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+            Comprar - 69.99$
+        </button>
+      </div>
+  </div>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+  <div class="card text-center">
+      <img src="imagenes/Halo.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="badge text-bg-danger">Disparos en primera persona</span>
+          <h5 class="card-title">Gran Turismo</h5>
+          <p class="card-text">Halo es una serie de juegos de disparos en primera persona que sigue las aventuras del Master Chief en una guerra intergaláctica. </p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+            Comprar - 59.99$
+        </button>
+      </div>
+  </div>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center mb-3">
+  <div class="card text-center">
+      <img src="imagenes/Minecraf.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="badge text-bg-danger">sandbox, supervivencia</span>
+          <h5 class="card-title">Minecraft</h5>
+          <p class="card-text">Minecraft es un videojuego de sandbox en el que los jugadores pueden explorar, construir y sobrevivir en un mundo de bloques.</p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+            Comprar - 29.99$
+        </button>
+      </div>
+  </div>
+</div>
+
+
+
+    
+
+      </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+      <p> <h2></h2> </p>
+  </div>
+</footer><br><br>
+<!--Carrousel-->
+
+<div id="Principal">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Imagenes/descargar.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/Breaking dead.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="imagenes/Bad Boys 4.jpeg" class="d-block w-100" alt="...">
+          </div>
+           <div class="carousel-item">
+            <img src="imagenes/PAPEL.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="contenido">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 offset-md-6 text-center text-md-end">
+                    <h1>Games Web</h1>
+                    <p class="d-none d-md-block">Explora nuestra colección de películas y series cuidadosamente seleccionadas, donde encontrarás tus títulos favoritos y descubrirás nuevas joyas cinematográficas.
+                      somos GAMES WEB.
+                    Haz clic " Quiero Conocer Mas" y ve a Peliculas en la parte superior </p>
+                        <a href="#" class="btn btn-outline-light" href="Intae/index.html"> Ir a seccion de series y peliculas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+<!--fin Carrousel-->
+<footer class="footer">
+    <div class="container">
+        <p> <h2>Explora nuestra selección de juegos anteriores, cada uno con experiencias únicas y emocionantes. Encuentra tus favoritos y nuevos desafíos.</h2> </p>
+    </div>
+  </footer>
+
+<!--Importante-->
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="row justify-content-center">
+      <small class="c">Conoce a los </small>
+        <h1 class="p">Profesores</h1>
+      <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card text-center mb-4">
+            <img src="imagenes/RDR2.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Red Dead Redemption 2</h5>
+                  <p class="card-text">Vive la vida de un forajido en el Salvaje Oeste, con una historia profunda y un mundo abierto detallado y realista.</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                    Comprar - 49.99$
+                </button>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card text-center mb-4">
+            <img src="imagenes/Resi.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Resident Evil</h5>
+                  <p class="card-text">Enfréntate a terrores inimaginables en un remoto pueblo europeo mientras buscas respuestas sobre el oscuro pasado de Ethan Winters.</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                    Comprar - 39.99$
+                </button>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card text-center mb-4">
+            <img src="imagenes/wir.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Ghostwire: Tokyo</h5>
+                  <p class="card-text">Explora una Tokio moderna y misteriosa, enfrentándote a espíritus malignos con habilidades sobrenaturales en esta aventura de acción.</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                    Comprar - 17.99$
+                </button>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+          <div class="card text-center mb-4">
+            <img src="imagenes/asasin.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">Assassin’s Creed Valhalla</h5>
+                  <p class="card-text">Lidera a los vikingos en su invasión de Inglaterra mientras construyes tu asentamiento y forjas alianzas en una era de guerra.</p>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                    Comprar - 17.99$
+                </button>
+              </div>
+          </div>
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+        <div class="card text-center mb-4">
+          <img src="imagenes/Final.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Final Fantasy VII Remake</h5>
+                <p class="card-text">Revive la icónica historia de Cloud y sus amigos en una reinterpretación moderna con gráficos impresionantes y una jugabilidad renovada.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                  Comprar - 17.99$
+              </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+      <div class="card text-center mb-4">
+        <img src="imagenes/Sekiro" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Sekiro: Shadows Die Twice</h5>
+              <p class="card-text">Adéntrate en el Japón feudal como un guerrero shinobi y enfréntate a enemigos desafiantes en una experiencia de combate única.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+                Comprar - 17.99$
+            </button>
+          </div>
+      </div>
+  </div>
+  <div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+    <div class="card text-center mb-4">
+      <img src="imagenes/Halo.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">Halo</h5>
+            <p class="card-text">Vuelve como el Jefe Maestro en una nueva aventura en Zeta Halo, donde lucharás por salvar a la humanidad y descubrirás secretos ocultos.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+              Comprar - 17.99$
+          </button>
+        </div>
+    </div>
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 d-flex justify-content-center">
+    <div class="card text-center mb-4">
+      <img src="imagenes/Kratos.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">God of war</h5>
+            <p class="card-text">Acompaña a Kratos y su hijo Atreus en una épica aventura en el mundo de la mitología nórdica, enfrentando dioses y monstruos.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formularioModal">
+              Comprar - 97.99$
+          </button>
+        </div>
+    </div>
+</div>
+
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!--fin Importante-->
+<footer class="footer">
+  <div class="container">
+      <p> <h2>
+
+        Gracias por visitarnos<br>
+
+Agradecemos tu tiempo y apoyo. Esperamos que disfrutes de nuestras películas, series y juegos. ¡Vuelve pronto para más novedades!
+
+
+        
+        </h2> </p>
+  </div>
+</footer>
+        
+
+<!--footer-->
+
+    <div id="footer" class="text-center pb-4 pt-4" >
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg">
+                    <a href="#">Derechos de autor reservados. Echo por: Jesua Garcia </a>
+                </div>
+            </div>
+        </div>                                     
+    </div>
+    
+<!--fin footer-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Manejo del formulario
+      document.getElementById('compraForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Evitar el envío del formulario
+  
+          // Cerrar el modal de formulario
+          var formularioModal = new bootstrap.Modal(document.getElementById('formularioModal'));
+          formularioModal.hide();
+  
+          // Mostrar el modal de confirmación
+          var confirmacionModal = new bootstrap.Modal(document.getElementById('confirmacionModal'));
+          confirmacionModal.show();
+      });
+  </script>
+  </body>
+</html>    
